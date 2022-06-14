@@ -1,6 +1,6 @@
 ## TODO
 
-- Add onclick redirect
+- Add onclick redirect to services
 - Fix .multi-line-truncation
 - Discuss with design about pagination if using page numbers is acceptable
 - Kpaginage page size 1 length should not show page sizes drop down
