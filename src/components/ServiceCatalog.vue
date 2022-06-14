@@ -67,17 +67,17 @@
 <script lang="ts" setup>
 import { ref, watch } from 'vue'
 import { KPagination, KCard, KButton, KInput } from '@kong/kongponents'
-import useServices from '@/composables/useServices'
+import { useServices, Service } from '@/composables/useServices'
 import CreateServiceModal from './CreateServiceModal.vue'
 
 // Import services from the composable
 const { services, loading } = useServices()
 // Set the search string to a Vue ref
 const searchQuery = ref('')
-const visibleServices = ref()
+const visibleServices = ref<Service[]>()
 const componentKey = ref(0)
 const serviceModalIsOpen = ref(false)
-let originalServices: any[]
+let originalServices: Service[]
 
 watch(loading, () => {
   originalServices = services.value
