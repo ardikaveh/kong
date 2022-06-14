@@ -16,4 +16,5 @@ export default defineConfig({
       '/api': 'http://localhost:4001',
     },
   },
+  transpileDependencies: [/@kong\/kongponents/],
 })

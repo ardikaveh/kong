@@ -2,7 +2,31 @@
   <header>
     <div class="nav">
       <router-link to="/">
-        Home
+        <img
+          alt="konnect home"
+          src="konnect.png"
+        >
+      </router-link>
+      <router-link to="/">
+        <KIcon
+          class="profile"
+          icon="profile"
+          size="32"
+        />
+      </router-link>
+      <router-link to="/">
+        <KIcon
+          class="help"
+          icon="help"
+          size="20"
+        />
+      </router-link>
+      <router-link to="/">
+        <KIcon
+          class="notification"
+          icon="notificationBell"
+          size="20"
+        />
       </router-link>
     </div>
   </header>
@@ -13,11 +37,12 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import { RouterView } from 'vue-router'
+import { RouterView, RouterLink } from 'vue-router'
+import { KIcon } from '@kong/kongponents'
 
 export default defineComponent({
   name: 'App',
-  components: { RouterView },
+  components: { RouterView, RouterLink, KIcon },
 })
 </script>
 
@@ -39,8 +64,14 @@ body {
 .nav {
   padding: 16px;
   margin-bottom: 4rem;
-  border-bottom: 1px solid #333;
-
+  border-bottom: 1px solid var(--grey-300);
+  .kong-icon {
+    float:right;
+    margin: 0 10px;
+  }
+  .kong-icon-profile {
+    margin-top: -5px;
+  }
   a {
     font-weight: 700;
     color: blue;
@@ -49,5 +80,6 @@ body {
       color: green;
     }
   }
+
 }
 </style>

@@ -22,6 +22,7 @@
     "lint:fix": "eslint '**/*.{js,jsx,ts,tsx,vue}' --fix"
   },
   "dependencies": {
+    "@kong/kongponents": "^7.0.0-beta.43",
     "axios": "^0.27.2",
     "pinia": "^2.0.14",
     "vue": "^3.2.35",

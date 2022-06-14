@@ -1,5 +1,16 @@
 # Welcome
 
+## TODO
+
+- Add onclick redirect
+- Fix .multi-line-truncation
+- Discuss with design about pagination if using page numbers is acceptable
+- Kpaginage page size 1 length should not show page sizes drop down
+- KPagingate should adjust size for mobile view
+- KPaginate should be reactive to items change ref prop
+- Add types to useService services, services in ServiceCatalog.vue
+- Add unit tests for filtering, adding a service
+
 ## Goal
 
 Make this Vue 3 app as close to [this mock](https://www.figma.com/file/zeaWiePnc3OCe34I4oZbzN/Service-Card-List?node-id=0%3A1) as possible while utilizing best-practices, coding standards, and great code to improve the example codebase.
